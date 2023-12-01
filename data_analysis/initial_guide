@@ -1,0 +1,96 @@
+COLUMNS:
+    KEEP:
+        id
+        event_id
+        down_time
+        action_time
+        activity
+        down_event
+        text_change
+        cursor_position
+        word_count
+
+
+    REMOVE:
+        up_event
+        up_time
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+ROWS:
+    KEEP ALL:
+        id
+        event_id
+        down_time
+        action_time
+        cursor_position
+        word_count
+
+    KEEP []:
+        activity:
+            Input
+            Remove/Cut
+            Nonproduction
+            Replace
+            Paste
+
+        down_event:
+            q
+            Space
+            Backspace
+            Shift
+            ArrowRight
+            Leftclick
+            ArrowLeft
+            .
+            ,
+            ArrowDown
+            ArrowUp
+            Enter
+            CapsLock
+            '
+            Delete
+            Unidentified
+            Control
+            "
+            -
+            ?
+            ;
+            =
+            Tab
+            /
+            Rightclick
+            :
+            (
+            )
+            \
+            ContextMenu
+            End
+            !
+            Meta
+            Alt
+            [
+            c
+            v
+
+        text_change:
+            q
+            <blank>
+            NoChange
+            .
+            ,
+            \n
+            '
+            "
+            -
+            ?
+            ;
+            =
+            /
+            \
+            :
+            (
+            [
+            )
+            !
+            AGGREGATE OTHER
